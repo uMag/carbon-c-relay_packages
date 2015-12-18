@@ -7,7 +7,7 @@ Type=simple
 EnvironmentFile=/etc/default/carbon-c-relay
 PIDFile=$PIDFILE
 User=carbon
-ExecStart=/usr/sbin/carbon-c-relay $OPTS
+ExecStart=/usr/sbin/carbon-c-relay -f /etc/carbon/carbon-c-relay.conf
 
 [Install]
 WantedBy=multi-user.target
